@@ -13,7 +13,7 @@ class Database:
     '''
     Database class contains tables.
     '''
-        #Added
+        #Add
         self.users = {}
         self.groups = {}
         self.loggedInAs = None
@@ -27,7 +27,7 @@ class Database:
         self.groups.update({'admins': admin_group})
         viewer_group = Group('admins', {}, set(), set())
         self.groups.update({'viewers': viewer_group})
-        #Added
+        #Add
 
     def __init__(self, name, load=True):
         self.tables = {}
